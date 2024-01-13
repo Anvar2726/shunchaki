@@ -1,0 +1,101 @@
+.header{
+    padding: 16px 0;
+    &__logo2{
+        display: none;
+    }
+    &__nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__list{
+        margin: 0 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        &-item{
+            display: flex;
+            align-items: center;
+            border-radius: 4px;
+            background:#70C05B;
+            padding: 0 8px;
+        }
+        &-text{
+            color: #FFF;
+            line-height: 150%; 
+            margin-left: 10px;
+        }
+        &-form{
+            width: 340px;
+            padding: 0 8px;
+            border-radius: 4px;
+            border: 1px solid  #70C05B;
+            background: #FFF;
+            display: flex;
+            align-items: center;
+            label{
+                margin-left: auto;
+            }
+        }
+        &-inp{
+            border: none;
+            outline: none;
+            width: 100%;
+        }
+    }
+
+    &__list2{
+        display: flex;
+        align-items: center;
+        &-item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 24px;
+        }
+
+        &-text{
+            color: #414141;
+            font-size: 12px;
+            line-height: 150%; 
+        }
+
+    }
+    &__list3{
+        &-item{
+            display: flex;
+            align-items: center;
+            p{
+                margin-left: 5px;
+                margin-right: 10px;
+            }
+        }
+
+    }
+}
+@media only screen and (max-width:910px){
+    .header{
+        &__logo{
+            display: none;
+        }
+        &__logo2{
+            display: block;
+        }
+        &__list{
+            &-text{
+                display: none;
+            }
+        }
+        &__list3{
+           &-item{
+            p{
+                display: none;
+            }
+           }
+           &-img{
+            display: none;
+           }
+        }
+    }
+}
