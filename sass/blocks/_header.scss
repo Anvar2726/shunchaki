@@ -1,4 +1,11 @@
 .header{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    background:  #FFF;
+    box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.10);
     padding: 16px 0;
     &__logo2{
         display: none;
@@ -26,8 +33,11 @@
             line-height: 150%; 
             margin-left: 10px;
         }
+        &-formWrap{
+            max-width: 340px;
+        }
         &-form{
-            width: 340px;
+            width: 100%;
             padding: 0 8px;
             border-radius: 4px;
             border: 1px solid  #70C05B;
@@ -96,6 +106,21 @@
            &-img{
             display: none;
            }
+        }
+    }
+}
+@media only screen and (max-width:678px){
+    .header{
+        &__list{
+            &-item{
+                display: none;
+            }
+        }
+        &__list2{
+            display: none;
+        }
+        &__list3{
+            display: none;
         }
     }
 }
